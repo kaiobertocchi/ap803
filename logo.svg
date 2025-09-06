@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs>
+  <rect width="320" height="80" rx="12" fill="url(#g)"/>
+  <text x="16" y="34" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="white">VISTA MAR</text>
+  <text x="16" y="60" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="500" fill="white">APTO 803 • GUARAPARI/ES</text>
+</svg>
