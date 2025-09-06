@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vista Mar • Apto 803 • Guarapari/ES</title>
+  <meta name="description" content="Panfleto digital do apartamento Vista Mar (Apto 803) em Guarapari/ES. Manual do hóspede, regras, contatos e dicas locais." />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="./assets/logo.svg" alt="Vista Mar • Apto 803 logo" />
+        <span class="tag">Guarapari</span>
+      </div>
+      <a class="cta" href="https://www.airbnb.com/l/w1d6Np5x" target="_blank" rel="noopener">Airbnb</a>
+    </div>
+    <style>
+      :root{
+        --bg:#0b1220;--bg-alt:#0e172a;--card:#0f1c2f;--muted:#8fb3d4;--text:#eaf3ff;
+        --brand:#14b8a6;--brand2:#38bdf8;--ring:rgba(56,189,248,.35)
+      }
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),var(--bg-alt));color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Helvetica Neue",sans-serif}
+      a{color:var(--brand2);text-decoration:none} a:hover{text-decoration:underline}
+      .container{max-width:1100px;margin:0 auto;padding:20px}
+      header{position:sticky;top:0;backdrop-filter:blur(10px);background:rgba(11,18,32,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+      .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+      .logo{display:flex;align-items:center;gap:12px}
+      .logo img{height:40px}
+      .tag{font-size:12px;padding:4px 8px;border-radius:999px;background:rgba(56,189,248,.14);border:1px solid var(--ring);color:#cfeaff}
+      .cta{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--ring);border-radius:999px;background:rgba(56,189,248,.08);font-weight:700}
+      .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;padding:36px 0 12px;align-items:center}
+      .hero-card{background:radial-gradient(1200px 400px at 20% -20%,rgba(56,189,248,.15),transparent),linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+      .hero h1{margin:0 0 10px;font-size:clamp(28px,3.6vw,48px);line-height:1.05}
+      .hero p{color:var(--muted);margin:6px 0 16px}
+      .badges{display:flex;gap:10px;flex-wrap:wrap}
+      .badge{background:rgba(56,189,248,.14);border:1px solid var(--ring);color:#cfeaff;padding:6px 10px;border-radius:999px;font-size:12px}
+      .button{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#22d3ee,#0ea5e9);color:#00253a;font-weight:800;padding:10px 14px;border-radius:12px;border:none}
+      .kv{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+      .kv img{width:100%;height:340px;object-fit:cover;display:block}
+      .section{margin:32px 0}
+      .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+      .grid{display:grid;gap:18px}
+      .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+      @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-2,.cards{grid-template-columns:1fr}}
+      .list{margin:0;padding-left:18px;line-height:1.6}
+      .carousel{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+      .carousel img{width:100%;height:420px;object-fit:cover;display:block}
+      .dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+      .dot{width:10px;height:10px;border-radius:999px;background:rgba(255,255,255,.55);border:1px solid rgba(0,0,0,.3);cursor:pointer}
+      .dot.active{background:var(--brand)}
+      /* Comodidades - ícones e botões */
+      .cat{display:flex;align-items:center;gap:10px;font-weight:800;color:#cfeaff;margin-bottom:8px}
+      .icon{display:inline-flex;vertical-align:middle;margin-right:4px;color:#9bd0ff}
+      .item{padding:10px;border-radius:12px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);margin:10px 0}
+      .item-title{font-weight:800}
+      .info{color:var(--muted);font-size:14px}
+      .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+      .btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.45);color:#cfeaff;font-weight:700;text-decoration:none}
+      .btn-ghost:hover{filter:brightness(1.08)}
+      footer{border-top:1px solid rgba(255,255,255,.06);margin-top:40px;padding:24px 0;color:#a6c1da;font-size:13px}
+      hr.sep{border:none;border-top:1px dashed rgba(255,255,255,.16);margin:14px 0}
+      /* Floating WhatsApp */
+      .fab-whats{position:fixed;right:18px;bottom:18px;z-index:100}
+      .fab-whats .fab-btn{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#25D366;color:#042d17;font-weight:800;border:none;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer}
+      .fab-whats .panel{position:absolute;right:0;bottom:66px;width:280px;background:#0e172a;border:1px solid rgba(255,255,255,.12);border-radius:14px;box-shadow:0 10px 28px rgba(0,0,0,.35);padding:12px;display:none}
+      .fab-whats .panel.show{display:block}
+      .wa-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px;border-radius:10px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.25);margin-top:8px}
+      .wa-actions a{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;background:#25D366;color:#042d17;font-weight:800;text-decoration:none}
+      .muted{color:#9cc7e6;font-size:12px}
+    </style>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Vista Mar • Apto 803</h1>
+        <p>Seu guia rápido da estadia: regras, contatos, Wi‑Fi, lixo e dicas de restaurantes, tudo num lugar só.</p>
+        <div class="badges">
+          <span class="badge">Até 8 hóspedes</span>
+          <span class="badge">Condomínio Costa Azul</span>
+          <span class="badge">Praia das Virtudes</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="button" href="https://www.airbnb.com/l/w1d6Np5x" target="_blank" rel="noopener">Ver anúncio no Airbnb</a>
+          <a class="button" href="#manual">Manual do hóspede</a>
+        </div>
+      </div>
+      <div class="kv">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpraiasdobrasil.com.br%2Fwp-content%2Fuploads%2F2019%2F04%2FPraia-das-virtudes-em-Guarapari-2.jpeg&f=1&nofb=1&ipt=748a29cd257d97209825c21970c3ed875598d1947c44544fbbc6b3f3bfad3a24" alt="Orla da Praia do Morro, Guarapari" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Guarapari em destaque</h2>
+      <div id="carousel" class="carousel"></div>
+    </section>
+
+    <section id="manual" class="section">
+      <h2>Manual do hóspede</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Boas-vindas & Objetivo</h3>
+          <p>Obrigado por escolher nosso imóvel. Este manual esclarece normas e procedimentos do Ed. Costa Azul para melhor compreensão da estadia.</p>
+          <p><strong>Dúvidas?</strong> Fale com <strong>Michela</strong> (27) 99962‑5333 ou <strong>Rogério</strong> (27) 99843‑6912.</p>
+          <blockquote>Críticas e sugestões são bem-vindas. Se possível, deixe seu comentário no Airbnb.</blockquote>
+        </div>
+        <div class="card">
+          <h3>Restrições</h3>
+          <ul class="list">
+            <li>Proibido fumar no apartamento e nas áreas do condomínio.</li>
+            <li>Proibido animais.</li>
+            <li>Ocupação máxima: 8 pessoas.</li>
+            <li>Não mover os móveis.</li>
+            <li>Uso <strong>obrigatório</strong> da <em>entrada de banhistas</em> ao retornar da praia (sujeito a multa).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Chaves & Portaria</h3>
+          <ul class="list">
+            <li>Você receberá 2 conjuntos de chaves.</li>
+            <li>Portão da garagem é aberto pelo porteiro (portaria 24h).</li>
+            <li>Há chave da <em>entrada de banhistas</em> (subsolo, uso obrigatório vindo da praia ou com trajes de banho).</li>
+          </ul>
+          <p class="info"><strong>Importante:</strong> perda de chave: cobrança de R$ 10 por unidade.</p>
+        </div>
+        <div class="card">
+          <h3>O apartamento oferece</h3>
+          <ul class="list">
+            <li>4 quartos (1 suíte) + dependência.</li>
+            <li>Ventiladores de teto em todos os quartos.</li>
+            <li>TV na sala, varanda, cozinha e área de serviço.</li>
+            <li>Economia de energia: desligue ventiladores e luzes quando não estiver usando.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Lixo</h3>
+          <ul class="list">
+            <li>Descarte diretamente na lixeira do condomínio (térreo). Em dúvida, interfone para o porteiro.</li>
+            <li>Não use o elevador social para lixo.</li>
+            <li>No checkout, esvazie restos de comida da geladeira.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Wi‑Fi & Convivência</h3>
+          <p><strong>Wi‑Fi:</strong> cortesia (sujeita a variação de velocidade em alta temporada). Senha fornecida no check-in.</p>
+          <ul class="list">
+            <li>Após 22h, som baixo.</li>
+            <li>Zele pela segurança; evite desperdício de água e energia.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="info small" style="margin-top:8px">Resumo adaptado do manual fornecido pelos proprietários.</p>
+    </section>
+
+    <section class="section">
+      <h2>Comodidades próximas</h2>
+
+      <div class="cards">
+        <!-- Restaurantes -->
+        <div class="card">
+          <div class="cat">
+            <!-- ícone restaurante -->
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2v8a3 3 0 0 1-3 3H7v9H5v-9H3V2h2v6h2V2h2zM16 6h3v16h-2v-7h-1a5 5 0 0 1-5-5V2h2v7a3 3 0 0 0 3 3h1V6z"/></svg>
+            Restaurantes
+          </div>
+
+          <div class="item">
+            <div class="item-title">Cantinho do Bacalhau</div>
+            <div class="info">Av. Edízio Cirne, 54 – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Cantinho+do+Bacalhau+Guarapari" target="_blank" rel="noopener">
+                <!-- ícone mapa -->
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+552733621935">
+                <!-- ícone telefone -->
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 3362-1935
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Sushi Bar</div>
+            <div class="info">Rua Mercedes Costa Pimentel – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Sushi+Bar+Rua+Mercedes+Costa+Pimentel+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+5527996243488">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 99624-3488
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Domino's</div>
+            <div class="info">R. Manoel Severo Simões, 110 – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Domino%27s+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+552740424242">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 4042-4242
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lanches & Doces -->
+        <div class="card">
+          <div class="cat">
+            <!-- ícone doce -->
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3c1.1 0 2 .9 2 2 0 .55-.45 1-1 1h-2a1 1 0 1 1 0-2c0-1.1.9-2 2-2zM4 10h16l-2 10H6L4 10zm3 5h10" stroke="currentColor" stroke-width="2"/></svg>
+            Lanches & Doces
+          </div>
+
+          <div class="item">
+            <div class="item-title">Sonho de Mel</div>
+            <div class="info">Rua Joaquim da Silva Lima, 122 – Loja 01 – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Sonho+de+Mel+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+552732613097">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 3261-3097
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Sol & Neve</div>
+            <div class="info">Rua Joaquim da Silva Lima, 120 – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Sol+e+Neve+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+552733622352">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 3362-2352
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Dolce Freddo Gelato</div>
+            <div class="info">Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Dolce+Freddo+Gelato+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+5527997851936">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 99785-1936
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Padaria & Outros -->
+        <div class="card">
+          <div class="cat">
+            <!-- ícone padaria -->
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14l-1 8H6l-1-8zm2-5a5 5 0 0 1 10 0v3H7V7z" stroke="currentColor" stroke-width="2"/></svg>
+            Padaria & Outros
+          </div>
+
+          <div class="item">
+            <div class="item-title">Boutique dos Pães</div>
+            <div class="info">Rua Joaquim da Silva Lima, 595 – Centro</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Boutique+dos+P%C3%A3es+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Como chegar
+              </a>
+              <a class="btn-ghost" href="tel:+552733611552">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.77 19.77 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.77 19.77 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.33 1.76.63 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.15a2 2 0 0 1 2.11-.45c.83.3 1.7.51 2.59.63A2 2 0 0 1 22 16.92z"/></svg>
+                Ligar (27) 3361-1552
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-title">Farmácias (região central)</div>
+            <div class="info">Diversas opções próximas</div>
+            <div class="btn-row">
+              <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=farm%C3%A1cia+Centro+Guarapari" target="_blank" rel="noopener">
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                Ver no mapa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="info" style="margin-top:8px">Endereços/telefones conforme manual. Os botões “Como chegar” abrem rota no Google Maps; “Ligar” disca direto.</p>
+    </section>
+
+
+    <section class="section">
+      <h2>Localização</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <p>Guarapari • Espírito Santo</p>
+          <p class="info">Confira a orla, restaurantes e comércio próximos.</p>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=Guarapari%2C+ES" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+        <div class="card">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.2725209247317!2d-40.492240!3d-20.668634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb82a0d7a0d9d3b%3A0x2c8c2ed150c0ad11!2sPraia%20das%20Virtudes%2C%20Guarapari%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v{int}"
+          width="100%" 
+          height="320" 
+          style="border:0;border-radius:12px" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <img src="./assets/logo.svg" alt="Vista Mar • Apto 803 logo" style="height:28px" />
+          <span>Vista Mar • Apto 803 — Ed. Costa Azul</span>
+          <span>•</span>
+          <span class="small">Contato: Michela (27) 99962‑5333 • Rogério (27) 99843‑6912</span>
+        </div>
+        <hr class="sep"/>
+       
+      </div>
+    </footer>
+  </main>
+
+  <!-- React 18 via UMD -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script>
+    const { useEffect, useState } = React;
+
+    function Carousel({ images, interval=5000 }) {
+      const [idx, setIdx] = useState(0);
+      useEffect(() => {
+        const id = setInterval(() => setIdx((i) => (i + 1) % images.length), interval);
+        return () => clearInterval(id);
+      }, [images, interval]);
+      return React.createElement(
+        React.Fragment,
+        null,
+        React.createElement('img', { src: images[idx], alt: 'Guarapari - destaque' }),
+        React.createElement('div', { className: 'dots' },
+          images.map((_, i) =>
+            React.createElement('button', {
+              key: i,
+              className: 'dot ' + (i===idx ? 'active' : ''),
+              onClick: () => setIdx(i),
+              'aria-label': 'Ir para imagem ' + (i+1)
+            })
+          )
+        )
+      );
+    }
+
+    const imageURLs = [ "https://terracapixaba.com/wp-content/uploads/2023/12/praia-das-virtudes-centro-de-guarapari-4.webp", "https://a0.muscache.com/im/pictures/8e2770da-3d76-4d78-9582-4cd714c49262.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/f25bb099-77e2-47b5-89ae-24b178961b27.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/0a9a0254-b072-4d54-a6f9-169f09c882f3.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/ba8f9fa2-0459-4e33-a0ac-d33175938787.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/1b036115-948c-4fbf-bb8b-2723db5ec45d.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/0cfd9875-3e64-4ff3-85ae-57927371ea37.jpg?im_w=1440" ];
+
+    ReactDOM.createRoot(document.getElementById('carousel')).render(
+      React.createElement(Carousel, { images: imageURLs })
+    );
+  </script>
+
+  
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .whatsapp-float img { width: 34px; height: 34px; }
+    .whatsapp-float.second { bottom: 90px; background-color: #128c7e; }
+  </style>
+
+
+  <div class="fab-whats" id="fabWhats">
+    <div class="panel" id="waPanel">
+      <h4>Fale pelo WhatsApp</h4>
+      <div class="wa-item">
+        <div>
+          <strong>Michela</strong><div class="muted">(27) 99962‑5333</div>
+        </div>
+        <div class="wa-actions">
+          <a href="https://wa.me/5527999625333?text=Olá%2C%20vi%20o%20site%20do%20Apto%20803%20(Praia%20das%20Virtudes)%20e%20gostaria%20de%20informações." target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="wa-item">
+        <div>
+          <strong>Rogério</strong><div class="muted">(27) 99843‑6912</div>
+        </div>
+        <div class="wa-actions">
+          <a href="https://wa.me/5527998436912?text=Olá%2C%20vi%20o%20site%20do%20Apto%20803%20(Praia%20das%20Virtudes)%20e%20gostaria%20de%20informações." target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="muted" style="margin-top:8px">Respondemos o quanto antes.</div>
+    </div>
+    <button class="fab-btn" id="waToggle" aria-label="Abrir WhatsApp"><img style="height:30px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkit.com%2Fpng%2Ffull%2F3-36604_whatsapp-png.png&f=1&ipt=a698352620760efa26bebed9bac193c70ffe6f8933b990fa43e10b443628daa8"></button>
+  </div>
+
+
+<script>
+  (function(){
+    const btn = document.getElementById('waToggle');
+    const panel = document.getElementById('waPanel');
+    if(btn && panel){
+      btn.addEventListener('click', () => {
+        panel.classList.toggle('show');
+      });
+      // Close when clicking outside
+      document.addEventListener('click', (e) => {
+        if(!document.getElementById('fabWhats').contains(e.target)){
+          panel.classList.remove('show');
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
